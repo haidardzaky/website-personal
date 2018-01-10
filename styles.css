@@ -5,10 +5,10 @@ body{
 }
 
 h1{
-  font-family: verdana;
+  font-family: Pacifico;
   position: relative;
   text-align: center;
-  color: white;
+  color: yellow;
   padding-top: 10px;
 }
 
@@ -21,10 +21,10 @@ h2{
 }
 
 h3{
-  font-family: verdana;
+  font-family: Pacifico;
   position: relative;
   text-align: center;
-  color: white;
+  color: yellow;
   padding-top: 100px;
 }
 
@@ -50,11 +50,10 @@ p{
 /* Let's style the wrapper in such away that,
 it should always be at the center of the browser */
 .wrapper {
-  position: absolute;
-
+  display: block;
+  position: fixed;
   left: 50%;
   transform: translate(-50%, -50%);
-
   margin-top: 120px;
 }
 
@@ -67,9 +66,10 @@ it should always be at the center of the browser */
   and float them to left and set its border and border-radius.
  */
 .wrapper ul li {
-  width: 75px;
-  height: 75px;
-  line-height: 75px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   margin: 0 10px;
   text-align: center;
   cursor: pointer;
@@ -83,7 +83,7 @@ it should always be at the center of the browser */
 to align it properly */
 .wrapper ul li .fa {
   color: #D8E2DC;
-  margin-top: 20px;
+  margin-top:4px;
   transition: all 0.5s ease;
 }
 
@@ -178,7 +178,7 @@ to align it properly */
 
 @media screen and (max-width: 340px){
   .wrapper {
-      width: 150px;
+      width: 100px;
   }
   .wrapper ul li{
       margin:15px;
